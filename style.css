@@ -62,6 +62,8 @@ input[type=checkbox] {
     height: 50px;
     width: 100%;
     margin-bottom: 40px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 

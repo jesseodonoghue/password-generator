@@ -55,14 +55,19 @@ function createPassword () {
     let generatedPassword = "";
 
     for (var i = 0; i < passLength; i++ ) {
-        generatedPassword += combinedPass[Math.floor(math.random() * passLength)];
+        generatedPassword += combinedPass[Math.floor(Math.random() * combinedPass.length)];
     }
 
     // Display completed password in text field
-    passwordEl.textContent = generatedPassword;
+    passwordEl.innerText = generatedPassword;
     console.log(generatedPassword);
 
-}
+};
 
-// Capture click event from Generate Password button
+/* Capture click event from Generate Password button to prevent default behavior
+btnGenerate.addEventListener("click", function(event) {
+    event.preventDefault;
+}); */
+
+// Capture click event from Generate Password button to create password
 btnGenerate.addEventListener("click", createPassword);
