@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Password Generator</title>
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <!-- Header section -->
+        <header>
+            <h2 class="header">Generate Random Password</h2>
+        </header>
+
+        <!-- Password result box -->
+        <section class="password-container">
+            <span id="password"></span>            
+        </section>
+
+        <!-- Settings checkboxes -->
+        <section class="preferences">
+
+            <!-- Password Length -->
+            <div class="settings">
+                <label>Password Length</label>
+                <input type="number" id="length" min="8" max="128" value="8" />
+            </div>
+
+            <!-- Uppercase -->
+            <div class="settings">
+                <label>Include uppercase</label>
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+
+            <!-- Lowercase -->
+            <div class="settings">
+                <label>Include lowercase</label>
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+
+            <!-- Numbers -->
+            <div class="settings">
+                <label>Include numbers</label>
+                <input type="checkbox" id="numbers" checked />
+            </div>
+
+            <!-- Symbols -->
+            <div class="settings">
+                <label>Include symbols</label>
+                <input type="checkbox" id="symbols" checked />
+            </div>
+        </section>
+
+        <!-- Generate Button -->
+        <button class="btn btn-large" id="generate-password">
+            Generate Password
+        </button>
+    </div>
+
+</body>
+</html>
