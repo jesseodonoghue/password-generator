@@ -1,0 +1,105 @@
+/* Body Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/code.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+header {
+    margin: 40px 20px;
+    text-align: center;
+}
+
+input[type=checkbox] {
+	margin-right: 0;
+}
+
+
+
+/* Heading Styles */
+
+.header {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+}
+
+
+/* Containers */
+
+.container {
+    background-color: #701A17;
+    border-radius: 20px;
+    padding: 20px;
+    width: 700px;
+    max-width: 100%;
+}
+
+.password-container {
+    background-color: #4C1210;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+/* Settings Section */
+
+.settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+
+/* Button Styles */
+
+.btn {
+    background-color: #CB3129;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 12px;
+    margin-top: 40px;
+}
+
+.btn-large {
+    display: block;
+    width: 100%;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 400px) {
+    .password-container {
+        font-size: 14px;
+    }
+
+    .header {
+        font-size: 14px;
+    }
+}
