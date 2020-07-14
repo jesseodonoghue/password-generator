@@ -93,7 +93,18 @@ input[type=checkbox] {
 }
 
 
-/* Media Query */
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+    .password-container {
+        font-size: 16px;
+    }
+
+    .header {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .password-container {
         font-size: 14px;
