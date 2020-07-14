@@ -10,8 +10,8 @@ A link to the live version of this app can be found below.
 [Random Password Generator](https://jesseodonoghue.github.io/password-generator/)
 
 ### References & Resources
-[CSS Tricks](https://css-tricks.com/)
-[W3Schools](https://w3schools.com)
+[CSS Tricks](https://css-tricks.com/)    
+[W3Schools](https://w3schools.com)    
 [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
 
 Also a big thank you to all of my instructors and classmates whose advice and assistance made this project what it is!
