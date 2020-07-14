@@ -6,6 +6,7 @@ const lowercaseEl = document.getElementById('lowercase');
 const numbersEl = document.getElementById('numbers');
 const symbolsEl = document.getElementById('symbols');
 const btnGenerate = document.getElementById('generate-password');
+const btnClipboard = document.getElementById('clipboard');
 
 // Main password function
 
@@ -60,14 +61,29 @@ function createPassword () {
 
     // Display completed password in text field
     passwordEl.innerText = generatedPassword;
-    console.log(generatedPassword);
 
-};
-
-/* Capture click event from Generate Password button to prevent default behavior
-btnGenerate.addEventListener("click", function(event) {
-    event.preventDefault;
-}); */
+}
 
 // Capture click event from Generate Password button to create password
 btnGenerate.addEventListener("click", createPassword);
+
+// Capture click event from Clipboard button to copy password to clipboard
+btnClipboard.addEventListener("click", function() {
+
+    // Create temporary text area and set value to current password field
+    const textarea = document.createElement('textarea');
+    const pswd = passwordEl.innerText;
+
+    if (!pswd) {
+        return;
+    }
+
+    // Add temporary text area to body, select password text, copy to clipboard, then remove text area
+    textarea.value = pswd;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    textarea.remove();
+    alert("Password copied to the clipboard!");
+    
+});
